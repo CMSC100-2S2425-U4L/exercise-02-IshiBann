@@ -12,13 +12,14 @@ header {
 
 header .menu a {
     color: #000;
-
-    font-weight: 500;
+    align-items: end;
+    font-weight: 300;
     letter-spacing: 1px;
-    padding: 2px 15px;
+
     border-radius: 20px;
     transition: 0.3s;
     transition-property: background;
+   
 }
 
 * {
@@ -70,7 +71,7 @@ label {
 }
 
 #nav{
-    background-color: #040D12;
+    background-color: #93B1A6;
 }
 
 @media (max-width: 960px) {
