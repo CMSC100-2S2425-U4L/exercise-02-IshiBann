@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <section>
+    <section id="nav">
         <input type="checkbox" id="check">
         <header>
-            <a><img src="coconutlogo.png" class="logo"></a>
+            <a><img src="coconutlogo.png" class="photo"></a>
             <div class="menu">
-                <a href="#coconut">About</a>
-                <a href="#Beneficios">Projects</a>
-                <a href="#faqs">FAQs</a>
-                <a href="#contacto">Contact</a>
+                <a href="#coconut"  id="tabs">About</a>
+                <a href="#Beneficios" id="tabs">Projects</a>
+                <a href="#faqs" id="tabs">FAQs</a>
+                <a href="#contacto" id="tabs">Contact</a>
             </div>
             <label for="check">
                 <i class="fas fa-bars menu-btn"></i>
@@ -23,5 +23,17 @@
             </label>
         </header>
     </section>
+
+    <div class="row">
+        <div class="column">
+          <h2>Column 1</h2>
+          <a><img src="coconutlogo.png" class="photo"></a>
+        </div>
+        <div class="column">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+      </div>
+
 </body>
 </html>
