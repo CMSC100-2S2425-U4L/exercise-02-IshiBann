@@ -295,8 +295,7 @@ h2{
     font-size: 20px;
 }
   
-  
-  #SE{
+#SE.container{
     display: flex;
     background-color: rgb(231, 243, 1);
     height: 100vh;
@@ -304,8 +303,13 @@ h2{
     align-items: center;
   }
 
- #skills.section,
- #Autobiography.section{
+ #skills.section{
+    height: 90%;
+    width: 40%;
+    border-radius: 30px;
+ }
+
+ #autobiography.section{
     height: 90%;
     width: 40%;
     border-radius: 30px;
@@ -320,7 +324,7 @@ h2{
 
   }
 
-  #skills.section > div:first-child{
+  .section > div:first-child{
     background-color: #037f55;
     align-self: center;
     justify-content: center;
@@ -330,7 +334,7 @@ h2{
     border-radius: 30px 30px 0 0;
 
   }
-  #skills.section > div:last-child{
+  .section > div:last-child{
     align-self: center;
     display: flex;
     justify-content: space-around;
@@ -372,21 +376,84 @@ h2{
   }
   
 
-  #Autobiography.section{
-    background-color: blue;
-  
+  #autobiography.section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
-  #Footer.container{
-    height: 100vh;
-    background-color: #b20707;
+  #autobiography.section > :nth-child(2){
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
+  
+  #autobiography.section > :last-child{
+    display: flex;
+    text-align: justify;
+    width: 90%;
+    margin-top: 0%;
+  }
+ 
 
-  #brush{
+  #skills{
     height:fit-content;
     width: 40%; /* or any custom size */
-    height: 0%; 
-   
+    transition: box-shadow 0.3s ease-in-out;
   }
 
-  
+  #skills:hover{
+    box-shadow: 0 5px 15px rgba(0, 255, 213, 0.8);
+  }
+
+  #pic{
+    width: 50%; /* or any custom size */
+    height: 80%;
+    background-color: #636363;
+    border-radius: 14px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #pic:hover{
+    box-shadow: 0 5px 15px rgba(0, 255, 213, 0.8);
+  }
+  .text{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #Footer.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20vh;
+    background-color: #b20707;
+    border-radius: 0 0px 30px 30px ;
+  }
+  #Footer.container > div:first-child{
+    height: 15vh;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    
+  }
+  #Footer.container > div:nth-child(2){
+    height: 15vh;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+  }
+  #logo{
+    height:100%;
+    transition: box-shadow 0.3s ease-in-out;
+    
+  }
+
+  .contact > p{
+    color: #ffffff;
+  }
